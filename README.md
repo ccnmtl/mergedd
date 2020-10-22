@@ -20,4 +20,4 @@ Merge the prs:
 
 ```ve/bin/python ./runner.py --owner <repo owner> --branch <pr branch> --api_token <github oauth token>```
 
-This is a sister utility to [Upgrayedd](https://github.com/ccnmtl/upgrayedd)
+This is a sister utility to [Upgrayedd](https://github.com/ccnmtl/upgrayedd) authored by `@thraxil`.
