@@ -1,0 +1,26 @@
+requests==2.24.0
+configparser==5.0.1
+entrypoints==0.3  # for flake8
+importlib-metadata==2.0.0  # for flake8
+zipp==3.3.1  # for flake8
+flake8==3.8.4
+mccabe==0.6.1
+pycodestyle==2.6.0
+pyflakes==2.2.0
+urllib3==1.25.10
+chardet==3.0.4
+certifi==2020.6.20  # sentry-sdk
+cryptography==3.1.1
+pyOpenSSL==19.1.0
+asn1crypto==1.4.0  # for pyOpenSSL
+cffi==1.14.3  # for pyOpenSSL
+idna==2.10
+
+six==1.15.0
+iniconfig==1.0.1
+pluggy==0.13.1
+py==1.9.0
+attrs==20.2.0
+requests-mock==1.8.0
+pytest==6.1.1
+mock==4.0.2

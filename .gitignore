@@ -1,0 +1,14 @@
+.DS_Store
+._.DS_Store
+._*
+*~
+*.pyc
+ve
+.project
+.pydevproject
+sandbox
+django.txt
+js.txt
+webpack.txt
+pullrequest.sh
+pullrequest-js.sh

@@ -1,0 +1,9 @@
+language: python
+sudo: false
+python:
+- '3.6'
+script:
+- make
+notifications:
+  slack: ccnmtl:GizSNscLWJLldjQrffB8mwgm
+
