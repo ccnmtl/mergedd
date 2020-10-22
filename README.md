@@ -8,7 +8,7 @@ Then make the project:
 
 ```make```
 
-Construct a file with a list of repositories. By default, the runner looks for `repos.txt`
+Construct a file with a list of repositories. By default, the runner looks for `repos.txt`.
 ```
 $ cat repos.txt
 repo_one
