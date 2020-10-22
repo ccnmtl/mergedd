@@ -16,4 +16,4 @@ Construct your list of repositories:
 Run the merge:
     ve/bin/python ./runner.py --owner <repo owner> --match <pr branch> --api_token <github oauth token>
 
-This is a sister utility to [Upgrayedd].
+This is a sister utility to [Upgrayedd](https://github.com/ccnmtl/upgrayedd)
