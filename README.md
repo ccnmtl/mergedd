@@ -1,6 +1,6 @@
 # Mergedd
 
-A little utility to merge an outstanding pull request on a named branch across multiple repositories. The code uses the Github API to check on the status of a pull request and issue a merge command if all checks are green.
+A little utility to merge an outstanding pull request on a named branch across multiple repositories. The code uses the Github API to find the outstanding pull request on a branch, check on the status of a pull request and issue a merge command if all checks are green.
 
 To use this utility, you'll need to generate a [personal access token](https://github.com/settings/tokens).
 
