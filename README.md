@@ -5,15 +5,17 @@ A little utility to merge an outstanding pull request on a named branch across m
 To use this utility, you'll need to generate a [personal access token](https://github.com/settings/tokens).
 
 Then make the project:
-   make
+`make`
 
-Construct your list of repositories:
-   repos.txt
-       repo_one
-       repo_two
-       repo_three
+Construct a file with a list of repositories. By default, the runner looks for `repos.txt`
+```
+$ cat repos.txt
+repo_one
+repo_two
+repo_three
+```
 
-Run the merge:
-    ve/bin/python ./runner.py --owner <repo owner> --match <pr branch> --api_token <github oauth token>
+Merge the prs.
+`ve/bin/python ./runner.py --owner <repo owner> --branch <pr branch> --api_token <github oauth token>`
 
 This is a sister utility to [Upgrayedd](https://github.com/ccnmtl/upgrayedd)
