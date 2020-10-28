@@ -33,6 +33,13 @@ class MergeMatchingPullRequestTask(object):
         the_json = response.json()
         return the_json['mergeable'] and the_json['mergeable_state'] == 'clean'
 
+    def delete_branch(self):
+        url = '{}/{}/{}/git/refs/heads/{}'.format(
+            self.git_base, self.owner, self.repo, self.pattern)
+
+        response = requests.delete(url, headers=self.headers)
+        return response.status_code == 204
+
     def merge_request(self, number):
         url = '{}/{}/{}/pulls/{}/merge'.format(
             self.git_base, self.owner, self.repo, number)
@@ -60,5 +67,10 @@ class MergeMatchingPullRequestTask(object):
         if not self.merge_request(number):
             print('An error occurred when trying to merge the pull request')
             return False
-
         print('Merged')
+
+        # Delete the branch
+        if not self.delete_branch():
+            print('An error occured when trying to delete the branch')
+            return False
+        print('Pull request branch deleted')
