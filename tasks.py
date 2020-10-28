@@ -34,7 +34,7 @@ class MergeMatchingPullRequestTask(object):
         return the_json['mergeable'] and the_json['mergeable_state'] == 'clean'
 
     def delete_branch(self):
-        url = '{}/{}/{}/get/refs/heads/{}'.format(
+        url = '{}/{}/{}/git/refs/heads/{}'.format(
             self.git_base, self.owner, self.repo, self.pattern)
 
         response = requests.delete(url, headers=self.headers)
