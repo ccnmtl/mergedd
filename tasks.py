@@ -38,7 +38,7 @@ class MergeMatchingPullRequestTask(object):
             self.git_base, self.owner, self.repo, self.pattern)
 
         response = requests.delete(url, headers=self.headers)
-        return response.status_code == 200
+        return response.status_code == 204
 
     def merge_request(self, number):
         url = '{}/{}/{}/pulls/{}/merge'.format(
